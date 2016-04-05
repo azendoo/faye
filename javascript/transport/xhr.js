@@ -63,7 +63,7 @@ var XHR = extend(Class(Transport, {
   }
 }), {
   isUsable: function(dispatcher, endpoint, callback, context) {
-    callback.call(context, URI.isSameOrigin(endpoint));
+    callback.call(context, true);
   }
 });
 
